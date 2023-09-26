@@ -1,0 +1,60 @@
+1
+t = input("Enter the values of t: ");
+v = input("Enter values of v: ");
+v = v';
+t = t';
+ones_vector = ones(1, size(t, 1));
+t = [ones_vector' t];
+a = inv(t' * t) * t' * v;
+a = a';
+t1 = input("Enter a time: ");
+result = a(1) + t1 * a(2);
+display(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+\
+
+t = input("Enter the values of t: ");
+v = input("Enter values of v: ");
+v = v';
+t = t';
+t2 = t.^2;
+display(t2);
+t = [t t2];
+display(t);
+ones_vector = ones(1, size(t, 1));
+t = [ones_vector' t];
+a = inv(t' * t) * t' * v;
+a = a';
+t1 = input("Enter a time: ");
+result = a(1) + t1 * a(2) + a(3)*t1.^2;
+display(result);
+
+
+t = input("Enter the values of t: ");
+v = input("Enter values of v: ");
+v = v';
+t = t';
+t2 = t.^2;
+t3 = t.^3;
+t = [t t2 t3];
+ones_vector = ones(1, size(t, 1));
+t = [ones_vector' t];
+display(t);
+a = inv(t' * t) * t' * v;
+a = a';
+t1 = input("Enter a time: ");
+result = a(1) + t1 * a(2) + a(3)*t1.^2 + a(4)*t1.^3;
+display(result);
